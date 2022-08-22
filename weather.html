@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Checker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="weather.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="ui middle aligned center aligned grid">
+      <div class="black column">
+        <h2>Enter city & country to search</h2>
+        <div class="ui large form" id="weather-form">
+          <div class="ui segment">
+            <div class="field">
+              <div class="ui left input">
+                <input type="text" id="city" placeholder="City" />
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left input">
+                <input type="text" id="country" placeholder="Country" />
+              </div>
+            </div>
+
+            <div id="submit-button" class="ui fluid large orange submit button">
+              Submit
+            </div>
+          </div>
+        </div>
+
+        <div id="results" class="ui message hidden"></div>
+      </div>
+    </div>
+  </body>
+</html>
